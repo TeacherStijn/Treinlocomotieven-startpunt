@@ -1,0 +1,12 @@
+{
+  "source": {
+    "include": ["."],
+    "includePattern": ".(jsx|js|ts|tsx)$",
+    "exclude": [
+        "node_modules",
+        "docs",
+		"out",
+		".git"
+    ]
+  }
+}
