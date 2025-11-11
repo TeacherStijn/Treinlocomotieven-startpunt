@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <title>Treinlocomotieven</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Treinlocomotieven</h1>
+    <div class="keys">
+      <input id="readKey" type="password" placeholder="API key">
+      <input id="adminKey" type="password" placeholder="Admin key">
+      <button id="btnLoad">Vernieuwen</button>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <table id="grid">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Serie</th>
+            <th>Type</th>
+            <th>Fabrikant</th>
+            <th>Bouwjaar</th>
+            <th>Spoorwijdte</th>
+            <th>Tractie</th>
+            <th>Max km/u</th>
+            <th>Acties</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="adminPanel">
+      <h2>Beheer</h2>
+      <form id="frm">
+        <input type="hidden" id="id">
+        <div class="row">
+          <input id="serie" placeholder="Serie">
+          <input id="type" placeholder="Type">
+        </div>
+        <div class="row">
+          <input id="fabrikant" placeholder="Fabrikant">
+          <input id="bouwjaar" type="number" placeholder="Bouwjaar">
+        </div>
+        <div class="row">
+          <input id="spoorwijdte" type="number" placeholder="Spoorwijdte">
+          <input id="tractie" placeholder="Tractie">
+          <input id="maxSnelheid" type="number" placeholder="Max km/u">
+        </div>
+        <div class="row">
+          <button type="submit" id="btnSave">Opslaan</button>
+          <button type="button" id="btnReset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <span>Status:</span> <span id="status">Klaar</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
